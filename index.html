@@ -7,38 +7,44 @@
     <title>AI Film Quote Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Film Quote Generator 🎬</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>AI Film Quote Generator 🎬</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Please enter the quote you are looking for"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        The film quote will go here
-        <br />
-      </div>
-    </main>
-    <footer>
-      This AI Generator was coded by
-      <a href="https://github.com/xiwilson" target="_blank">Linzi Wilson</a> and
-      is open-sourced on
-      <a href="https://github.com/xiwilson/film-quote-generator" target="_blank"
-        >GitHub</a
-      >
-      and is hosted on
-      <a href="https://aifilmquotegenerator.netlify.app/" target="_blank"
-        >Netlify.</a
-      >
-    </footer>
-    <script src="src/index.js"></script>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Please enter the quote you are looking for"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="quotes">
+          The film quote will go here
+          <br />
+        </div>
+      </main>
+      <footer>
+        This AI Generator was coded by
+        <a href="https://github.com/xiwilson" target="_blank">Linzi Wilson</a>
+        and is open-sourced on
+        <a
+          href="https://github.com/xiwilson/film-quote-generator"
+          target="_blank"
+          >GitHub</a
+        >
+        and is hosted on
+        <a href="https://aifilmquotegenerator.netlify.app/" target="_blank"
+          >Netlify.</a
+        >
+      </footer>
+
+      <script src="src/index.js"></script>
+    </div>
   </body>
 </html>

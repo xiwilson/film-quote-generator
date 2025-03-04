@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/index.css" />
@@ -13,7 +14,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="film-quote-generator">
           <input
             type="text"
             placeholder="Please enter the quote you are looking for"
@@ -24,10 +25,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="quotes">
-          The film quote will go here
-          <br />
-        </div>
+        <div class="quotes" id="quotes">"I am your father"</div>
       </main>
       <footer>
         This AI Generator was coded by

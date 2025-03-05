@@ -119,25 +119,22 @@ form {
 .hidden {
   display: none;
 }
-.generating {
+.blink {
   animation: blink-animation 1s steps(5, start) infinite;
 }
 @keyframes blink-animation {
-  0%,
-  100% {
+  from {
     visibility: visible;
   }
-  50% {
+  to {
     visibility: hidden;
   }
 }
-
 @-webkit-keyframes blink-animation {
-  0%,
-  100% {
+  from {
     visibility: visible;
   }
-  50% {
+  to {
     visibility: hidden;
   }
 }

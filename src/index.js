@@ -37,9 +37,9 @@ Now, generate a maximum of 10 famous movie quotes based on the keyword: "${userK
     prompt
   )}&context=${encodeURIComponent(context)}&key=${apiKey}`;
 
-  let quotesElement = document.querySelector("#quotes");
+  let quotesElement = document.querySelector("#quote");
   quotesElement.classList.remove("hidden");
-  quotesElement.innerHTML = `Generating film quotes about ${instructionInput.value}`;
+  quotesElement.innerHTML = `<div class="generating"> ⏳ Generating film quotes about ${instructionInput.value}...</div>`;
 
   axios
     .get(apiUrl)

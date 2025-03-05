@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,10 +23,12 @@
             required
             autocomplete="off"
             class="instructions"
+            id="user-instruction"
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="quotes" id="quotes">"I am your father"</div>
+        <div class="quotes" id="quote">"I am your father"</div>
+        <br />
       </main>
       <footer>
         This AI Generator was coded by

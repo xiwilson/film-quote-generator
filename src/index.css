@@ -71,6 +71,12 @@ form {
   border-radius: 9px;
 }
 
+.quotes strong {
+  color: #00c6cf;
+  font-size: 18px;
+  font-style: normal;
+}
+
 footer {
   text-align: center;
   font-size: 13px;

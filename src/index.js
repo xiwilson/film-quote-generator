@@ -32,12 +32,14 @@ function generateQuote(event) {
 Now, generate a maximum of 10 famous movie quotes based on the keyword: "${userKeyword}".`;
 
   let context = `Your mission is to generate film quotes and include the film they are from. The user instruction keyword "${userKeyword}" must be included in your output. Wrap each quote in a <p> element and separate multiple quotes with a <br> element. Do not include any additional formatting instructions. Sign the quote with 'SheCodes AI' inside a <strong> element at the end of the quotes list`;
-
   let apiKey = "3f47deba7d7o337tb76d054056f8cbe1";
-
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${encodeURIComponent(
     prompt
   )}&context=${encodeURIComponent(context)}&key=${apiKey}`;
+
+  let quotesElement = document.querySelector("#quotes");
+  quotesElement.classList.remove("hidden");
+  quotesElement.innerHTML = `Generating film quotes about ${instructionInput.value}`;
 
   axios
     .get(apiUrl)

@@ -15,20 +15,21 @@
       </header>
 
       <main>
-        <form id="film-quote-generator">
-          <input
-            type="text"
-            placeholder="Please enter the quote you are looking for"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instruction"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="quotes" id="quote">"I am your father"</div>
-        <br />
+          <form id="film-quote-generator">
+            <input
+              type="text"
+              placeholder="Please enter a word or phrase..."
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instruction"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">for example: yellow, how you doing</div>
+        </div>
+        <div class="quotes hidden" id="quote"></div>
       </main>
       <footer>
         This AI Generator was coded by

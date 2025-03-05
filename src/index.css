@@ -1,37 +1,69 @@
 body {
-  background-color: #e9e9e9;
+  background: url(cinema.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .container {
   margin: 120px auto;
   max-width: 600px;
+  background-color: black;
+  padding: 30px 70px 30px 70px;
+  border-radius: 10px;
 }
 header {
   margin-bottom: 30px;
 }
 a {
-  color: #ff1a9d;
+  color: #ff0191;
+  background-color: black;
+  padding: 2px;
+  border-radius: 6px;
+  font-size: 12px;
 }
 h1 {
+  margin-bottom: 40px;
   text-align: center;
-  font-size: 50px;
+  font-size: 45px;
   line-height: 1.5;
-  color: #353535;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
+  animation: pulsate 1.5s infinite alternate;
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #f10943,
+    0 0 0.8rem #f10943, 0 0 2.8rem #f10943, inset 0 0 1.3rem #f10943;
 }
+
+@keyframes pulsate {
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f10943,
+      0 0 80px #f10943, 0 0 90px #f10943, 0 0 100px #f10943, 0 0 150px #f10943;
+  }
+}
+
+0% {
+  text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #bc13fe,
+    0 0 45px #bc13fe, 0 0 55px #bc13fe, 0 0 70px #bc13fe, 0 0 80px #bc13fe;
+}
+
 .form-wrapper {
   padding: 40px;
   background-color: white;
   border-radius: 9px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   margin-bottom: 30px;
+  border: 3px solid #ff6cb8;
+  border-radius: 9px;
 }
 form {
   display: flex;
 }
 .hint {
-  color: #ff1a9d;
+  color: #f10943;
   line-height: 1.5px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -48,13 +80,15 @@ form {
   padding: 10px 20px 10px 20px;
   width: 80%;
   color: black;
+  border: 2px solid #f10943;
+  border-radius: 9px;
 }
 .instructions:hover {
-  border: 2px solid #00c6cf;
+  border: 2px solid #f10943;
 }
 .submit-button {
   margin-left: 10px;
-  background-color: #00c6cf;
+  background-color: #f10943;
   color: white;
   border: 1px solid rgba(220, 220, 222, 0.5);
   font-size: 18px;
@@ -65,7 +99,7 @@ form {
 }
 .submit-button:hover {
   cursor: pointer;
-  background-color: #ff1a9d;
+  background-color: #ff6cb8;
 }
 .quotes {
   font-size: 20px;
@@ -74,11 +108,11 @@ form {
   background-color: white;
   padding: 20px;
   line-height: 24px;
-  border-left: 3px solid #00c6cf;
+  border: 3px solid #f10943;
   border-radius: 9px;
 }
 .quotes strong {
-  color: #00c6cf;
+  color: #f10943;
   font-size: 17px;
   font-style: normal;
 }
@@ -89,18 +123,30 @@ form {
   animation: blink-animation 1s steps(5, start) infinite;
 }
 @keyframes blink-animation {
-  to {
-    visability: hidden;
+  0%,
+  100% {
+    visibility: visible;
+  }
+  50% {
+    visibility: hidden;
   }
 }
+
 @-webkit-keyframes blink-animation {
-  to {
-    visability: hidden;
+  0%,
+  100% {
+    visibility: visible;
+  }
+  50% {
+    visibility: hidden;
   }
 }
 footer {
+  color: white;
   text-align: center;
-  font-size: 13px;
+  font-size: 12px;
   margin-top: 30px;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  border-radius: 6px;
 }
